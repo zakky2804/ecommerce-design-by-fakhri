@@ -16,7 +16,7 @@ const Sidebar = ({ children }: React.PropsWithChildren) => {
   );
 
   useEffect(() => {
-    if (!open) return; // ❌ kalau tidak open, jangan tambahkan listener
+    if (!open) return;
     const handleClickOutside = (e: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setIsOpen(false);
@@ -25,7 +25,6 @@ const Sidebar = ({ children }: React.PropsWithChildren) => {
 
     document.addEventListener("mousedown", handleClickOutside);
 
-    // 🧼 Cleanup ketika dropdown ditutup
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -49,7 +48,6 @@ const Sidebar = ({ children }: React.PropsWithChildren) => {
         }`}
         ref={menuRef}
       >
-        {/* Header (tidak ikut shrink / expand) */}
         <div className="flex justify-between border-b border-border px-4 mb-2">
           <h2 className="text-2xl mb-4 flex-shrink-0">My Carts</h2>
           <button

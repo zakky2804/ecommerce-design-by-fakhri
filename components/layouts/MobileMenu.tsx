@@ -9,7 +9,7 @@ const MobileMenu = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLUListElement>): void => {
     const target = e.target as HTMLElement;
-    const element = target.closest("li"); // cari elemen <a> terdekat (bisa target sendiri atau parent)
+    const element = target.closest("li");
 
     if (element) setIsOpen(false);
   };

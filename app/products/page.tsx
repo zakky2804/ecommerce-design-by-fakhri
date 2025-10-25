@@ -43,7 +43,6 @@ export default function Products() {
         </h2>
       </div>
 
-      {/* LIST PRODUK */}
       <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-5 gap-5 mb-14">
         {loading ? (
           <>

@@ -9,7 +9,7 @@ interface ImageWithSkeletonProps {
   width: number;
   height: number;
   className?: string;
-  rounded?: string; // opsional: untuk atur sudut (misal "rounded-lg")
+  rounded?: string;
 }
 
 export default function ImageWithSkeleton({
@@ -42,7 +42,7 @@ export default function ImageWithSkeleton({
           isLoading ? "opacity-0" : "opacity-100"
         }`}
         onLoad={() => setIsLoading(false)}
-        priority={false} // pakai true hanya jika penting di atas fold
+        priority={false}
       />
     </div>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-// import Link from "next/link";
 import CartCard from "./cards/CartCard";
 import { useDataStore } from "@/store/dataStore";
 

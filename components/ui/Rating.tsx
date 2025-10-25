@@ -3,7 +3,7 @@
 import { Star } from "lucide-react";
 
 interface RatingProps {
-  rating: number; // contoh: 3 -> artinya 3 bintang akan berwarna
+  rating: number;
 }
 
 const Rating = ({ rating }: RatingProps) => {

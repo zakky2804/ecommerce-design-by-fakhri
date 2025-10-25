@@ -32,15 +32,15 @@ const ZustandProvider = ({ children, initialdata }: ZustandProviderProps) => {
     <>
       {children}
       <NextTopLoader
-        color="#e85e2d" // warna (Tailwind blue-500)
-        initialPosition={0.08} // posisi awal bar (8%)
-        crawlSpeed={200} // kecepatan "merayap"
-        height={3} // tinggi bar dalam px
-        crawl={true} // animasi merayap saat loading
-        showSpinner={false} // hilangkan spinner kecil
+        color="#e85e2d"
+        initialPosition={0.08}
+        crawlSpeed={200}
+        height={3}
+        crawl={true}
+        showSpinner={false}
         easing="ease"
         speed={400}
-        shadow="0 0 10px #3B82F6, 0 0 5px #3B82F6" // glow biru
+        shadow="0 0 10px #3B82F6, 0 0 5px #3B82F6"
       />
       <Toaster
         toastOptions={{

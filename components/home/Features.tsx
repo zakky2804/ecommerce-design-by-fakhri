@@ -36,7 +36,6 @@ const Features = () => {
     <section className="py-8">
       <h2 className="text-center text-3xl mb-8">Featured Products</h2>
 
-      {/* flex */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:px-6 gap-y-6">
         {featuresData.map((feature) => (
           <div

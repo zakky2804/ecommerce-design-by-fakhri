@@ -7,7 +7,7 @@ import { notFound, useParams } from "next/navigation";
 
 export default function OrderDetailId() {
   const params = useParams<{ id: string }>();
-  const id = params.id ?? ""; // fallback jika undefined
+  const id = params.id ?? "";
 
   const { getOrder } = useDataStore();
   const orderData = id ? getOrder(id) : undefined;

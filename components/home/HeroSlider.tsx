@@ -13,15 +13,14 @@ const HeroSlider = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulasi load data (bisa diganti sesuai logic store kakak)
     if (products.length > 0) {
       setSliderProduct(products.slice(0, 3));
-      setLoading(false); // ⬅️ matikan loading begitu data siap
+      setLoading(false);
     }
   }, [products]);
 
   if (loading) {
-    return <HeroSkeleton />; // ⬅️ tampilkan skeleton saat loading
+    return <HeroSkeleton />;
   }
 
   return (

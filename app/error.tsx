@@ -14,11 +14,6 @@ export default function ErrorPage({
       <section className="text-center space-y-4 -mt-20">
         <TriangleAlert size={100} className="mx-auto text-destructive" />
         <h1 className="text-4xl font-semibold">Something went wrong</h1>
-        {/* {process.env.NODE_ENV === "development" && (
-          <pre className="bg-muted p-3 rounded-md text-left text-sm text-muted-foreground overflow-auto max-w-[450px] mx-auto">
-            {error?.stack}
-          </pre>
-        )} */}
 
         <div className="flex justify-center gap-3 mt-6">
           <button

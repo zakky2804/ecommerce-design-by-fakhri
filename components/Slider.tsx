@@ -55,7 +55,6 @@ const Slider = ({ children }: React.PropsWithChildren) => {
     ]
   );
 
-  // update slider kalau children berubah
   useEffect(() => {
     if (instanceRef.current) {
       instanceRef.current.update();
