@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Modern E-Commerce Frontend
 
-## Getting Started
+A sleek and responsive **E-Commerce web application** built with modern frontend technologies.  
+This project showcases product browsing, cart management, and order simulation — all powered by data from the [Fake Store API](https://fakestoreapi.com/).
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🧩 **Dynamic Product Listing** — fetches data from a real API.
+- 🔍 **Product Detail Page** — displays detailed info for each product.
+- 🛒 **Cart Functionality** — add, remove, and update product quantities.
+- 📦 **Order Simulation** — allows users to "place orders" (frontend only).
+- 📱 **Fully Responsive** — optimized for all screen sizes.
+- ⚡ **Optimized Performance** — with lazy loading and efficient rendering.
+
+---
+
+## 🧠 Tech Stack
+
+| Category             | Tools                                                              |
+| -------------------- | ------------------------------------------------------------------ |
+| **Framework**        | [Next.js 15](https://nextjs.org/) + [React 19](https://react.dev/) |
+| **Styling**          | [Tailwind CSS 3](https://tailwindcss.com/)                         |
+| **Icons**            | [Lucide React](https://lucide.dev/)                                |
+| **State Management** | React Hooks / Context                                              |
+| **API Source**       | [Fake Store API](https://fakestoreapi.com/)                        |
+| **Deployment**       | [Vercel](https://vercel.com/)                                      |
+
+---
+
+## 🖼️ Preview
+
+![App Screenshot](public/preview.png)
+
+---
+
+## 🏗️ Project Setup
 
 ```bash
+# Clone this repository
+git clone https://github.com/yourusername/ecommerce-frontend.git
+
+# Navigate to the project folder
+cd ecommerce-frontend
+
+# Set base url project
+set environment variables in .env file
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
