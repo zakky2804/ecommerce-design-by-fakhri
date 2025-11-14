@@ -7,7 +7,7 @@ const FetchWrapper = async ({ children }: React.PropsWithChildren) => {
     cache: "no-store",
   });
 
-  if (!res.ok) throw new Error("Failed to fetch users");
+  if (!res.ok) throw new Error("Failed to fetch products");
   const results: Product[] = await res.json();
   const data = results.map((item) => ({ ...item, quantity: 10 }));
 
