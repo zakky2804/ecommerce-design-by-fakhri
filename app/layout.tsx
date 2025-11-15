@@ -48,9 +48,6 @@ export const metadata: Metadata = {
     },
   },
   category: "E-commerce",
-  other: {
-    preconnect: ["https://fakestoreapi.com"],
-  },
 };
 
 export default async function RootLayout({
