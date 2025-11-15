@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Outfit, Merriweather } from "next/font/google";
 import "./globals.css";
-import FetchWrapper from "@/components/FetchWrapper";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
+import ZustandProvider from "@/components/ZustandProvider";
 
 const geistSans = Outfit({
   variable: "--font-outfit",
@@ -60,7 +60,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <FetchWrapper>
+        <ZustandProvider>
           <div className="xl:max-w-[1366px] mx-auto ">
             <Navbar />
             <main className="px-4 md:px-0 md:max-w-2xl lg:max-w-3xl xl:max-w-6xl xl:px-6 mx-auto">
@@ -68,7 +68,7 @@ export default async function RootLayout({
             </main>
             <Footer />
           </div>
-        </FetchWrapper>
+        </ZustandProvider>
       </body>
     </html>
   );
