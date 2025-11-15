@@ -16,7 +16,6 @@ const geistMono = Merriweather({
   subsets: ["latin"],
 });
 
-// app/page.tsx or app/layout.tsx
 
 const baseUrl = process.env.BASE_URL;
 export const metadata: Metadata = {
