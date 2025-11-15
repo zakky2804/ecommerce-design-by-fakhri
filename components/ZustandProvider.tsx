@@ -10,6 +10,15 @@ interface ZustandProviderProps {
   initialdata: Product[];
 }
 
+const NextTopLoader = dynamic(() => import("nextjs-toploader"), {
+  ssr: false,
+});
+
+const Toaster = dynamic(
+  () => import("react-hot-toast").then((mod) => mod.Toaster),
+  { ssr: false }
+);
+
 const ZustandProvider = ({ children, initialdata }: ZustandProviderProps) => {
   const { setProduct, initial } = useDataStore();
 
@@ -18,15 +27,6 @@ const ZustandProvider = ({ children, initialdata }: ZustandProviderProps) => {
       setProduct(initialdata);
     }
   }, [initial, initialdata, setProduct]);
-
-  const NextTopLoader = dynamic(() => import("nextjs-toploader"), {
-    ssr: false,
-  });
-
-  const Toaster = dynamic(
-    () => import("react-hot-toast").then((mod) => mod.Toaster),
-    { ssr: false }
-  );
 
   return (
     <>

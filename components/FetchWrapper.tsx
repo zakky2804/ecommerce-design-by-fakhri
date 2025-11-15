@@ -7,7 +7,7 @@ const FetchWrapper = async ({ children }: React.PropsWithChildren) => {
     signal: AbortSignal.timeout(10000),
   });
 
-  if (!res.ok) throw new Error("Failed to fetch products");
+  // if (!res.ok) throw new Error("Failed to fetch products");
   const results: Product[] = await res.json();
   const data = results.map((item) => ({ ...item, quantity: 10 }));
 
