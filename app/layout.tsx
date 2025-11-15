@@ -16,7 +16,6 @@ const geistMono = Merriweather({
   subsets: ["latin"],
 });
 
-
 const baseUrl = process.env.BASE_URL;
 export const metadata: Metadata = {
   title: "Example — Discover the Best Products | Modern E-Commerce",
@@ -54,6 +53,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  await fetch("https://fakestoreapi.com/products");
+
   return (
     <html lang="en">
       <body
