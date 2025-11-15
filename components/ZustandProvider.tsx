@@ -20,6 +20,8 @@ const Toaster = dynamic(
 );
 
 const ZustandProvider = ({ children, initialdata }: ZustandProviderProps) => {
+  console.log(initialdata);
+
   const { setProduct, initial } = useDataStore();
 
   useEffect(() => {
