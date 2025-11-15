@@ -9,7 +9,6 @@ const FetchWrapper = async ({ children }: React.PropsWithChildren) => {
     // ← Tambah try
     const res = await fetch("https://fakestoreapi.com/products", {
       next: { revalidate: 2592000 },
-      signal: AbortSignal.timeout(10000),
     });
 
     if (res.ok) {
