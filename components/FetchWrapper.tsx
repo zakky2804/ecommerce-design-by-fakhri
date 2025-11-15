@@ -7,9 +7,7 @@ const FetchWrapper = async ({ children }: React.PropsWithChildren) => {
 
   try {
     // ← Tambah try
-    const res = await fetch("https://fakestoreapi.com/products", {
-      next: { revalidate: 2592000 },
-    });
+    const res = await fetch("https://fakestoreapi.com/products");
 
     if (res.ok) {
       // ← Ubah dari throw error jadi check res.ok
